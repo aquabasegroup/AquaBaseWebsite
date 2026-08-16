@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalogue | AQUA BASE Group & Asian Aqua Products</title>
+  
+  <meta name="description" content="Explore our full catalogue of 13 certified aquaculture products including AB min+, G-8 Gut N Grow, OXYBASE, KING PRO +, AS-4 Plus, and Plankton Food.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  
+  
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="public/images/logo.png" alt="AQUA BASE Group Official Logo" class="site-logo-img">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link ">Home</a></li>
+          <li><a href="about.html" class="nav-link ">About Us</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="solutions.html" class="nav-link ">Solutions</a></li>
+          <li><a href="quality-process.html" class="nav-link ">Quality & Process</a></li>
+          <li><a href="dealer.html" class="nav-link ">Dealership</a></li>
+          <li><a href="insights.html" class="nav-link ">Insights</a></li>
+          <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="https://wa.me/919114222777?text=Hi%20Asian%20Aqua%20Products%2C%20I%20want%20more%20information." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fab fa-whatsapp"></i> Get Advice
+          </a>
+          <button class="mobile-toggle" aria-label="Toggle Mobile Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-nav">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo">
+        <img src="public/images/logo.png" alt="AQUA BASE Group Logo" class="site-logo-img">
+      </a>
+      <button class="close-nav" aria-label="Close Mobile Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Product Catalogue</a></li>
+      <li><a href="solutions.html">Solutions & Problem Guide</a></li>
+      <li><a href="quality-process.html">Quality & Manufacturing</a></li>
+      <li><a href="dealer.html">Become a Dealer</a></li>
+      <li><a href="insights.html">Aqua Articles & Insights</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Page Banner -->
+  <section class="page-header-banner">
+    <div class="container">
+      <span class="section-tag"><i class="fas fa-boxes"></i> Complete Formulations</span>
+      <h1>Certified <span class="gradient-text">Product Catalogue</span></h1>
+      <p>Filter by issue or search for specific formulations engineered for shrimp and fish health.</p>
+    </div>
+  </section>
+
+  <!-- Product Explorer & Search -->
+  <section class="section-padding">
+    <div class="container">
+      <div style="max-width: 600px; margin: 0 auto 3rem auto;">
+        <div class="form-group">
+          <input type="text" id="product-search-input" class="form-control" placeholder="🔍 Search by product name, benefit (e.g. white gut, ammonia)..." style="padding: 1.1rem 1.5rem; font-size: 1.05rem;">
+        </div>
+      </div>
+
+      <div class="explorer-controls">
+        <button class="filter-btn active" data-filter="all">All Products (13)</button>
+        <button class="filter-btn" data-filter="white-gut">🦠 White Gut & Feces</button>
+        <button class="filter-btn" data-filter="water-soil">💧 Water & Soil</button>
+        <button class="filter-btn" data-filter="minerals">🧪 Minerals & Feed</button>
+        <button class="filter-btn" data-filter="probiotics">🧬 Probiotics</button>
+        <button class="filter-btn" data-filter="sanitizers">🛡️ Sanitizers & Fluke</button>
+        <button class="filter-btn" data-filter="plankton">🌱 Plankton & Biofloc</button>
+      </div>
+
+      <div id="products-grid-container" class="products-grid">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Mega Footer -->
+  
+  <!-- Mega Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="public/images/logo.png" alt="AQUA BASE Group Logo" class="footer-logo-img">
+          <p style="color: var(--text-body); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            AQUA BASE Group of Companies (Estd. 2002) is an ISO 9001:2015 & cGMP certified manufacturer of premium aquaculture supplements, probiotics, and water detoxifiers.
+          </p>
+          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+            <span class="badge-chip">ASIAN AQUA</span>
+            <span class="badge-chip">GOLDEN BAY</span>
+            <span class="badge-chip">AB CHEM</span>
+            <span class="badge-chip">RK FEEDS</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Product Catalogue</a></li>
+            <li><a href="solutions.html">Solutions & Problem Guide</a></li>
+            <li><a href="quality-process.html">Quality & Certifications</a></li>
+            <li><a href="dealer.html">Become a Dealer</a></li>
+            <li><a href="insights.html">Articles & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?filter=white-gut">White Gut & Feces Treatment</a></li>
+            <li><a href="products.html?filter=water-soil">Ammonia & Toxic Gas Binders</a></li>
+            <li><a href="products.html?filter=plankton">Live Plankton Biofloc Boosters</a></li>
+            <li><a href="products.html?filter=probiotics">40 Billion CFU Probiotics</a></li>
+            <li><a href="products.html?filter=sanitizers">Silver Nano Gill Sanitizers</a></li>
+            <li><a href="products.html?filter=minerals">Export Quality Mineral Mixers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Head Office</h4>
+          <p style="color: var(--text-body); font-size: 0.88rem; line-height: 1.6; margin-bottom: 0.8rem;">
+            ASIAN AQUA PRODUCTS<br>
+            4-408, Storehousepet, Lakshmipuram, Nellore, Andhra Pradesh - 524002
+          </p>
+          <div class="footer-contact-list">
+            <div class="footer-contact-line">
+              <span class="footer-lbl">Phone:</span>
+              <a href="tel:+919114222777">+91 9114 222 777</a>
+            </div>
+            <div class="footer-contact-line">
+              <span class="footer-lbl">Email:</span>
+              <a href="mailto:asianaquaproducts@gmail.com">asianaquaproducts@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AQUA BASE Group of Companies / Asian Aqua Products. All rights reserved.</p>
+        <p>ISO 9001:2015 & cGMP Certified | CAA Certified Antibiotic Free</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919114222777?text=Hi%20Asian%20Aqua%20Products%2C%20I%20want%20to%20order%20products." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Product Specs Modal -->
+  <div id="product-modal" class="modal-overlay">
+    <div class="modal-container glass-card">
+      <button class="modal-close-btn" aria-label="Close Modal" onclick="closeProductModal()"><i class="fas fa-times"></i></button>
+      <div id="modal-product-content">
+        <!-- Dynamically Populated by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

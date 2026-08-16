@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Dealer | AQUA BASE Group & Asian Aqua Products</title>
+  
+  <meta name="description" content="Join the AQUA BASE distribution network. High profit margins, marketing collateral, fast logistics, and technical training for aquaculture dealers across India.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  
+  
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="public/images/logo.png" alt="AQUA BASE Group Official Logo" class="site-logo-img">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link ">Home</a></li>
+          <li><a href="about.html" class="nav-link ">About Us</a></li>
+          <li><a href="products.html" class="nav-link ">Products</a></li>
+          <li><a href="solutions.html" class="nav-link ">Solutions</a></li>
+          <li><a href="quality-process.html" class="nav-link ">Quality & Process</a></li>
+          <li><a href="dealer.html" class="nav-link active">Dealership</a></li>
+          <li><a href="insights.html" class="nav-link ">Insights</a></li>
+          <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="https://wa.me/919114222777?text=Hi%20Asian%20Aqua%20Products%2C%20I%20want%20more%20information." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fab fa-whatsapp"></i> Get Advice
+          </a>
+          <button class="mobile-toggle" aria-label="Toggle Mobile Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-nav">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo">
+        <img src="public/images/logo.png" alt="AQUA BASE Group Logo" class="site-logo-img">
+      </a>
+      <button class="close-nav" aria-label="Close Mobile Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Product Catalogue</a></li>
+      <li><a href="solutions.html">Solutions & Problem Guide</a></li>
+      <li><a href="quality-process.html">Quality & Manufacturing</a></li>
+      <li><a href="dealer.html">Become a Dealer</a></li>
+      <li><a href="insights.html">Aqua Articles & Insights</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Page Banner -->
+  <section class="page-header-banner">
+    <div class="container">
+      <span class="section-tag"><i class="fas fa-handshake"></i> Business Opportunity</span>
+      <h1>Become an Authorized <span class="gradient-text">Distributor / Dealer</span></h1>
+      <p>Partner with AQUA BASE Group of Companies to supply ISO-certified aquaculture supplements with high margins and fast dispatch across India.</p>
+    </div>
+  </section>
+
+  <!-- Dealer Benefits Grid -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="why-grid">
+        <div class="glass-card why-card">
+          <div class="why-icon"><i class="fas fa-percentage"></i></div>
+          <h3>High Profit Margins</h3>
+          <p>Attractive wholesale pricing and lucrative commission structures designed to grow your business profitability.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <div class="why-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>Marketing Support</h3>
+          <p>Free promotional materials, product brochures, banners, and digital marketing support for your retail store.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <div class="why-icon"><i class="fas fa-truck-moving"></i></div>
+          <h3>Fast Logistics</h3>
+          <p>Priority order dispatch from our Nellore manufacturing hub to ensure your stock never runs low during peak farming seasons.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <div class="why-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Technical Staff Training</h3>
+          <p>Comprehensive product knowledge training for your sales team by our senior aquaculture consultants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dealer Application Form Section -->
+  <section class="section-padding section-tint-subtle">
+    <div class="container">
+      <div class="glass-card contact-form-card" style="max-width: 750px; margin: 0 auto;">
+        <div class="section-tag" style="background: rgba(0, 201, 167, 0.15); color: var(--accent-green); border-color: var(--accent-green);">
+          <i class="fas fa-file-signature"></i> Application Form
+        </div>
+        <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Apply For <span class="gradient-text-green">Dealership</span></h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">
+          Fill in your firm details below. Our sales manager will contact you within 24 hours to discuss distribution terms.
+        </p>
+
+        <form id="dealer-application-form" style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <div class="form-group">
+            <label for="dealer-name">Firm / Shop Name</label>
+            <input type="text" id="dealer-name" class="form-control" placeholder="e.g. Sri Krishna Aqua Feeds & Chemicals" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dealer-contact-name">Contact Person Name</label>
+            <input type="text" id="dealer-contact-name" class="form-control" placeholder="Your Full Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dealer-phone">Phone / WhatsApp Number</label>
+            <input type="tel" id="dealer-phone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dealer-state">State & District</label>
+            <input type="text" id="dealer-state" class="form-control" placeholder="e.g. Andhra Pradesh, West Godavari" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dealer-experience">Years in Aqua Business</label>
+            <input type="text" id="dealer-experience" class="form-control" placeholder="e.g. 5 Years">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">
+            <i class="fas fa-paper-plane"></i> Submit Dealer Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mega Footer -->
+  
+  <!-- Mega Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="public/images/logo.png" alt="AQUA BASE Group Logo" class="footer-logo-img">
+          <p style="color: var(--text-body); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            AQUA BASE Group of Companies (Estd. 2002) is an ISO 9001:2015 & cGMP certified manufacturer of premium aquaculture supplements, probiotics, and water detoxifiers.
+          </p>
+          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+            <span class="badge-chip">ASIAN AQUA</span>
+            <span class="badge-chip">GOLDEN BAY</span>
+            <span class="badge-chip">AB CHEM</span>
+            <span class="badge-chip">RK FEEDS</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Product Catalogue</a></li>
+            <li><a href="solutions.html">Solutions & Problem Guide</a></li>
+            <li><a href="quality-process.html">Quality & Certifications</a></li>
+            <li><a href="dealer.html">Become a Dealer</a></li>
+            <li><a href="insights.html">Articles & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?filter=white-gut">White Gut & Feces Treatment</a></li>
+            <li><a href="products.html?filter=water-soil">Ammonia & Toxic Gas Binders</a></li>
+            <li><a href="products.html?filter=plankton">Live Plankton Biofloc Boosters</a></li>
+            <li><a href="products.html?filter=probiotics">40 Billion CFU Probiotics</a></li>
+            <li><a href="products.html?filter=sanitizers">Silver Nano Gill Sanitizers</a></li>
+            <li><a href="products.html?filter=minerals">Export Quality Mineral Mixers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Head Office</h4>
+          <p style="color: var(--text-body); font-size: 0.88rem; line-height: 1.6; margin-bottom: 0.8rem;">
+            ASIAN AQUA PRODUCTS<br>
+            4-408, Storehousepet, Lakshmipuram, Nellore, Andhra Pradesh - 524002
+          </p>
+          <div class="footer-contact-list">
+            <div class="footer-contact-line">
+              <span class="footer-lbl">Phone:</span>
+              <a href="tel:+919114222777">+91 9114 222 777</a>
+            </div>
+            <div class="footer-contact-line">
+              <span class="footer-lbl">Email:</span>
+              <a href="mailto:asianaquaproducts@gmail.com">asianaquaproducts@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AQUA BASE Group of Companies / Asian Aqua Products. All rights reserved.</p>
+        <p>ISO 9001:2015 & cGMP Certified | CAA Certified Antibiotic Free</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919114222777?text=Hi%20Asian%20Aqua%20Products%2C%20I%20am%20interested%20in%20a%20dealership." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/data/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

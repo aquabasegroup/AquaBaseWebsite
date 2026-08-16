@@ -1,0 +1,22 @@
+{
+  "name": "aqua-base-website",
+  "version": "1.0.0",
+  "description": "Premium international website for AQUA BASE Group of Companies & Asian Aqua Products",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -l 3000",
+    "dev": "npx serve -s . -l 3000"
+  },
+  "keywords": [
+    "aquaculture",
+    "shrimp-supplements",
+    "fish-health",
+    "probiotics",
+    "aqua-base"
+  ],
+  "author": "Asian Aqua Products",
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}
