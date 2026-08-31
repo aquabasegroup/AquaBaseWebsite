@@ -116,7 +116,7 @@ function initProductExplorer() {
       const categoryLabel = p.categoryLabel || p.category;
       const desc = p.shortDesc || p.subtitle || p.description;
       const dosage = p.dosage || p.dosageSummary || 'Consult Aqua Expert';
-      const waLink = `https://wa.me/919114222777?text=Hi%20Asian%20Aqua%20Products%2C%20I%20want%20to%20order%20${encodeURIComponent(p.name)}`;
+      const waLink = `https://wa.me/918453323456?text=Hi%20Asian%20Aqua%20Products%2C%20I%20want%20to%20order%20${encodeURIComponent(p.name)}`;
 
       return `
         <div class="glass-card product-card" data-id="${p.id}">
@@ -220,7 +220,7 @@ function openProductModal(productId) {
   const benefits = Array.isArray(product.benefits) && product.benefits.length > 0
     ? product.benefits
     : ['Scientifically tested formulation', 'Maximizes crop survival and pond yield'];
-  const waLink = product.whatsappLink || `https://wa.me/919114222777?text=Hi%20Asian%20Aqua%20Products%2C%20I%20want%20to%20order%20${encodeURIComponent(name)}`;
+  const waLink = product.whatsappLink || `https://wa.me/918453323456?text=Hi%20Asian%20Aqua%20Products%2C%20I%20want%20to%20order%20${encodeURIComponent(name)}`;
 
   modalContent.innerHTML = `
     <div class="modal-product-layout">
@@ -366,7 +366,7 @@ function initDosageCalculator() {
 
     if (actionBtn) {
       const msg = encodeURIComponent(`Hi Asian Aqua Products, I calculated my pond dosage for ${acres} Acre(s) using ${data.name}. Required Quantity: ${totalQty} ${data.unit}. Please assist me with ordering.`);
-      actionBtn.setAttribute('href', `https://wa.me/919114222777?text=${msg}`);
+      actionBtn.setAttribute('href', `https://wa.me/918453323456?text=${msg}`);
     }
   }
 
@@ -400,7 +400,7 @@ function initFormHandlers() {
       const message = document.getElementById('contact-message').value;
 
       const msg = encodeURIComponent(`Hi Asian Aqua Products, my name is ${name} (${phone}). Requirement: ${message}`);
-      window.open(`https://wa.me/919114222777?text=${msg}`, '_blank');
+      window.open(`https://wa.me/918453323456?text=${msg}`, '_blank');
     });
   }
 
@@ -412,7 +412,7 @@ function initFormHandlers() {
       const phone = document.getElementById('dealer-phone').value;
 
       const msg = encodeURIComponent(`Hi Asian Aqua Products, I want to apply for a Dealership. Firm Name: ${firm}, Contact Person: ${person}, Phone: ${phone}.`);
-      window.open(`https://wa.me/919114222777?text=${msg}`, '_blank');
+      window.open(`https://wa.me/918453323456?text=${msg}`, '_blank');
     });
   }
 }
